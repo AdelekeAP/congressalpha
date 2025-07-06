@@ -12,6 +12,9 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Input } from "@/components/ui/input";
 import { Select, SelectTrigger, SelectContent, SelectItem, SelectValue } from "@/components/ui/select";
 import { Bell, ArrowUpRight, ArrowDownRight } from "lucide-react";
+import { Link } from "react-router-dom"; // Add this at the top
+
+
 
 const trades = [
   {
@@ -95,8 +98,13 @@ const RecentTrades = () => {
                   </AvatarFallback>
                 </Avatar>
                 <div>
-                  <div className="flex items-center gap-2">
-                    <span className="font-medium">{trade.politician}</span>
+                <div className="flex items-center gap-2">
+                    <Link
+                      to={`/politicians/${encodeURIComponent(trade.politician)}`}
+                      className="font-medium text-brand-600 hover:text-brand-400 no-underline"
+                    >
+                      {trade.politician}
+                    </Link>
                     <Badge
                       variant="outline"
                       className={
@@ -108,6 +116,7 @@ const RecentTrades = () => {
                       {trade.party}
                     </Badge>
                   </div>
+
                   <div className="text-sm text-muted-foreground">
                     {trade.action} {trade.stock} • {trade.amount}
                   </div>

@@ -62,7 +62,11 @@
     @apply border-border;
   }
 
-  body {
+  /* body {
     @apply bg-background text-foreground;
+  } */
+  body {
+    @apply bg-brand-900 text-brand-100;
   }
+  
 }

@@ -4,6 +4,8 @@ import Layout from "@/components/Layout";
 import Dashboard from "@/pages/Dashboard";
 import TradeFeedPage from "@/pages/TradeFeed";
 import Politicians from "@/pages/Politicians";
+import PoliticianPage from "@/pages/PoliticianPage";
+
 import Settings from "@/pages/Settings";
 
 const App = () => {
@@ -15,6 +17,7 @@ const App = () => {
           <Route index element={<Dashboard />} />
           <Route path="trades" element={<TradeFeedPage />} />
           <Route path="politicians" element={<Politicians />} />
+          <Route path="politicians/:name" element={<PoliticianPage />} />
           <Route path="settings" element={<Settings />} />
         </Route>
       </Routes>
