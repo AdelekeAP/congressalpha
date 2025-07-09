@@ -1,32 +1,86 @@
-// src/data/politicians.js
-
 export const politicians = {
   "Nancy Pelosi": {
+    name: "Nancy Pelosi",
+    title: "Speaker Emerita",
     party: "D",
     state: "CA",
-    bio: "Speaker of the House, active in tech stock trades.",
-    trades: [
+    avgHoldTime: "92 days",
+    bestTrade: "+14.3%",
+    district: "11th",
+    avatar: "/placeholder.svg",
+    totalReturn: "+23.4%",
+    trades: 47,
+    winRate: "78%",
+    followers: 1247,
+    isWatched: true,
+    topSectors: ["Technology", "Healthcare", "Finance"],
+    recentPerformance: "+5.1%",
+    bio: "Nancy Pelosi has served in the U.S. House of Representatives for California's 11th congressional district and is a prominent member of the Democratic Party. She previously served as the Speaker of the House and is known for her active participation in political and economic reform.",
+    
+    recentTrades: [
       {
         stock: "NVDA",
+        company: "NVIDIA Corporation",
         action: "BUY",
-        amount: "$1M-$5M",
+        amount: "$1M - $5M",
         date: "2024-01-15",
-        change: "+12.5%",
+        entryPrice: "875.43",
+        currentPrice: "920.15",
+        return: "+5.1%",
+        status: "Open",
       },
-    ],
-  },
-  "Dan Crenshaw": {
-    party: "R",
-    state: "TX",
-    bio: "Representative from Texas, active in energy sector trades.",
-    trades: [
       {
-        stock: "TSLA",
+        stock: "AAPL",
+        company: "Apple Inc.",
         action: "SELL",
-        amount: "$500K-$1M",
-        date: "2024-01-14",
-        change: "-3.2%",
+        amount: "$500K - $1M",
+        date: "2024-01-10",
+        entryPrice: "185.20",
+        currentPrice: "192.80",
+        return: "+4.1%",
+        status: "Closed",
+      },
+      {
+        stock: "MSFT",
+        company: "Microsoft Corporation",
+        action: "BUY",
+        amount: "$250K - $500K",
+        date: "2024-01-08",
+        entryPrice: "420.15",
+        currentPrice: "425.80",
+        return: "+1.3%",
+        status: "Open",
+      },
+      {
+        stock: "GOOGL",
+        company: "Alphabet Inc.",
+        action: "SELL",
+        amount: "$1M - $5M",
+        date: "2024-01-05",
+        entryPrice: "142.30",
+        currentPrice: "138.90",
+        return: "-2.4%",
+        status: "Closed",
       },
     ],
+
+    performanceData: [
+      { month: "Jan", pelosi: 4.2, market: 2.1 },
+      { month: "Feb", pelosi: 6.1, market: 1.8 },
+      { month: "Mar", pelosi: 8.3, market: 2.5 },
+      { month: "Apr", pelosi: 12.1, market: 3.2 },
+      { month: "May", pelosi: 15.4, market: 4.1 },
+      { month: "Jun", pelosi: 18.7, market: 4.8 },
+    ],
+
+    sectorData: [
+      { name: "Technology", value: 35, color: "#8884d8" },
+      { name: "Healthcare", value: 20, color: "#82ca9d" },
+      { name: "Finance", value: 18, color: "#ffc658" },
+      { name: "Energy", value: 15, color: "#ff7300" },
+      { name: "Consumer", value: 12, color: "#00ff88" },
+    ]
   },
+
+  // ...other politicians (you can copy the same structure above)
 };
