@@ -5,9 +5,9 @@ from backend.database import engine
 from backend.models import Base
  # Adjust if your routes file is elsewhere
 from backend.routes import users, trades, politicians, alerts, trades, following
+from backend.auth import router as auth_router
 # Create tables on startup (safe to run every time, only creates if not exist)
 Base.metadata.create_all(bind=engine)
-
 app = FastAPI(title="CongressAlpha API")
 
 # Allow CORS from your frontend
@@ -24,6 +24,6 @@ app.include_router(trades.router, prefix="/api/trades")
 app.include_router(users.router, prefix="/api/users")
 app.include_router(trades.router, prefix="/api/trades")
 app.include_router(politicians.router, prefix="/api/politicians")
-
 app.include_router(alerts.router, prefix="/api/alerts")
 app.include_router(following.router, prefix="/api/following")
+app.include_router(auth_router)
