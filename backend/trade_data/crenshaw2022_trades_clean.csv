@@ -1,0 +1,14 @@
+company,ticker,asset_type,owner_code,date,type,amount
+Alphabet Inc. - Class C Capital Stock (GOOG) [ST],,,,10/25/2022,P,1001 - $15000
+"Amazon.com, Inc. (AMZN) [ST]",,,,10/25/2022,P,1001 - $15000
+Apple Inc. (AAPL) [ST],,,,10/25/2022,P,1001 - $15000
+Boeing Company (BA) [ST],,,,01/20/2022,S,1001 - $15000
+Direxion Financial Bull 3X Shares (FAS) [ST],,,,01/10/2022,S,15001 - $50000
+Direxion Financial Bull 3X Shares (FAS) [ST],,,,10/25/2022,P,1001 - $15000
+"Hertz Global Holdings, Inc - Warrant (HTZWW) [ST]",,,,01/20/2022,S,1001 - $15000
+iShares Core S&P Total U.S. Stock Market ETF (ITOT) [EF],,,,02/23/2022,S,1001 - $15000
+"Meta Platforms, Inc. - Class A (META) [ST]",,,,10/25/2022,P,1001 - $15000
+Southwest Airlines Company (LUV) [ST],,,,01/20/2022,S,1001 - $15000
+SPDR S&P 500 (SPY) [ST],,,,01/26/2022,S,1001 - $15000
+United States Oil Fund (USO) [ST],,,,10/25/2022,P,1001 - $15000
+"Wynn Resorts, Limited (WYNN) [ST]",,,,10/25/2022,P,1001 - $15000

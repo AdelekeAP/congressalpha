@@ -1,0 +1,15 @@
+company,ticker,asset_type,owner_code,date,type,amount
+"Palo Alto Networks, Inc.",PANW,OP,SP,02/12/2024,P,500001
+"Palo Alto Networks, Inc.",PANW,OP,SP,02/21/2024,P,100001
+"Forge Investments, LLC",,AB,SP,03/04/2024,P,1000001
+Broadcom Inc. - Common Stock,AVGO,OP,SP,06/24/2024,P,1000001
+"Tesla, Inc. - Common Stock",TSLA,ST,SP,06/24/2024,S,250001
+NVIDIA Corporation - Common Stock,NVDA,ST,SP,06/26/2024,P,1000001
+Visa Inc.,V,ST,SP,07/01/2024,S,500001
+Microsoft Corporation - Common Stock,MSFT,ST,SP,07/26/2024,S,1000001
+NVIDIA Corporation - Common Stock,NVDA,ST,SP,07/26/2024,P,1000001
+"REOF XXVI, LLC",,AB,SP,08/13/2024,P,250001
+"Palo Alto Networks, Inc.",PANW,ST,SP,12/20/2024,P,1000001
+NVIDIA Corporation - Common Stock,NVDA,ST,SP,12/20/2024,P,500001
+Apple Inc. - Common Stock,AAPL,ST,SP,12/31/2024,S,5000001
+NVIDIA Corporation - Common Stock,NVDA,ST,SP,12/31/2024,S,1000001

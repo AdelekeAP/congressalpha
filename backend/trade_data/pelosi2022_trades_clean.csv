@@ -1,0 +1,34 @@
+company,ticker,asset_type,owner_code,date,type,amount
+Alliance Bernstein Holding L.P. Units,,OL,SP,12/28/2022,S,500001
+AllianceBernstein Holding L.P. Units,AB,OL,SP,01/27/2022,P,250001
+Alphabet Inc. - Class A,GOOGL,ST,SP,12/20/2022,S,500001
+Alphabet Inc. - Class A,GOOGL,ST,SP,12/21/2022,S,500001
+Alphabet Inc. - Class A,GOOGL,ST,SP,12/28/2022,S,500001
+Alphabet Inc. - Class C Capital Stock,GOOG,ST,SP,09/16/2022,P,1000001
+American Express Company,AXP,ST,SP,01/21/2022,P,250001
+Apple Inc.,AAPL,ST,SP,01/21/2022,P,1000001
+Apple Inc.,AAPL,OP,SP,05/13/2022,P,500001
+Apple Inc.,AAPL,OP,SP,05/24/2022,P,250001
+Apple Inc.,AAPL,OP,SP,06/17/2022,S,100001
+"Micron Technology, Inc.",MU,OP,SP,09/16/2022,S,15001 - $50000
+Microsoft Corporation,MSFT,OP,SP,05/24/2022,P,50001
+Microsoft Corporation,MSFT,OP,SP,05/24/2022,P,250001
+"Netflix, Inc.",NFLX,ST,SP,12/29/2022,S,250001
+"Netflix, Inc.",NFLX,ST,SP,12/30/2022,S,250001
+NVIDIA Corporation,NVDA,ST,SP,06/17/2022,P,1000001
+NVIDIA Corporation,NVDA,ST,SP,07/26/2022,S,1000001
+NVIDIA Corporation,NVDA,OP,SP,09/16/2022,S,100001
+"PayPal Holdings, Inc.",PYPL,ST,SP,01/21/2022,P,500001
+"PayPal Holdings, Inc.",PYPL,ST,SP,12/21/2022,S,250001
+"PayPal Holdings, Inc.",PYPL,ST,SP,12/28/2022,S,250001
+"REOF XX, LLC",,AB,SP,08/24/2022,P,15001 - $50000
+"REOF XX, LLC",,AB,SP,12/27/2022,P,15001 - $50000
+Roblox Corporation Class A,RBLX,ST,SP,12/28/2022,S,100001
+"Salesforce, Inc.",CRM,OP,SP,12/20/2022,S,9
+"Tesla, Inc.",TSLA,ST,SP,03/17/2022,P,1000001
+"Tesla, Inc.",TSLA,ST,SP,12/20/2022,S,500001
+Visa Inc.,V,ST,SP,06/21/2022,S,1000001
+Walt Disney Company,DIS,ST,SP,01/21/2022,P,1000001
+Walt Disney Company,DIS,OP,SP,09/16/2022,S,1
+Walt Disney Company,DIS,ST,SP,12/21/2022,S,500001
+"Warner Bros. Discovery, Inc. - Series A",WBD,ST,SP,04/11/2022,E,50001

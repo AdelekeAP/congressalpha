@@ -1,0 +1,6 @@
+company,ticker,asset_type,owner_code,date,type,amount
+Apple Inc.,AAPL,ST,SP,03/17/2023,P,500001
+Apple Inc.,AAPL,ST,SP,06/15/2023,P,250001
+Microsoft Corporation,MSFT,ST,SP,06/15/2023,P,500001
+NVIDIA Corporation,NVDA,OP,SP,11/22/2023,P,1000001
+Roblox Corporation Class A,RBLX,OP,SP,01/20/2023,S,1

@@ -1,5 +1,3 @@
-# backend/routes/following.py
-
 from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
 from backend.database import SessionLocal
@@ -29,6 +27,8 @@ def follow_politician(follow: FollowingCreate, db: Session = Depends(get_db)):
         raise HTTPException(status_code=400, detail="Already following this politician")
     following = Following(user_id=follow.user_id, politician_id=follow.politician_id)
     db.add(following)
+    # ---- UPDATE FOLLOWERS COUNT ----
+    politician.followers_count += 1
     db.commit()
     db.refresh(following)
     return following
@@ -39,6 +39,10 @@ def unfollow_politician(follow_id: int, db: Session = Depends(get_db)):
     following = db.query(Following).filter(Following.id == follow_id).first()
     if not following:
         raise HTTPException(status_code=404, detail="Following relationship not found")
+    # ---- UPDATE FOLLOWERS COUNT ----
+    politician = db.query(Politician).filter(Politician.id == following.politician_id).first()
+    if politician and politician.followers_count > 0:
+        politician.followers_count -= 1
     db.delete(following)
     db.commit()
     return {"detail": "Unfollowed"}

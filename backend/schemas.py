@@ -1,6 +1,6 @@
 from pydantic import BaseModel, EmailStr
 from typing import Optional, List
-
+from datetime import date
 
 class TradeBase(BaseModel):
     politician: str
@@ -105,3 +105,29 @@ class FollowingOut(FollowingBase):
 
     class Config:
         from_attributes = True
+class SimulationRequest(BaseModel):
+    politician_ids: List[int]
+    start_date: date
+    end_date: date
+    investment_amount: float
+    simulation_strategy: Optional[str] = "equal"
+
+class TradeSimulationResult(BaseModel):
+    trade_id: int
+    ticker: str
+    buy_date: date
+    buy_price: float
+    sell_date: date
+    sell_price: float
+    return_: float
+    politician_id: int
+
+class PoliticianSummary(BaseModel):
+    politician_id: int
+    return_: float
+
+class SimulationResponse(BaseModel):
+    total_return: float
+    final_balance: float
+    trade_results: List[TradeSimulationResult]
+    summary_by_politician: List[PoliticianSummary]
