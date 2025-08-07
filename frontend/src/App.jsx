@@ -10,6 +10,7 @@ import Politicians from "@/pages/Politicians";
 import PoliticianPage from "@/pages/PoliticianPage";
 import FollowingPage from "@/pages/FollowingPage";      // ← imported
 import Settings from "@/pages/Settings";
+import StrategySimulationPage from "@/pages/StrategySimulationPage";
 import ProfilePage from "./pages/Profile";
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
             <Route path="politicians/:name" element={<PoliticianPage />} />
             <Route path="profile" element={<ProfilePage />} />
             <Route path="following" element={<FollowingPage />} />  {/* now defined */}
+            <Route path="/strategy-simulation" element={<StrategySimulationPage />} />
             <Route path="settings" element={<Settings />} />
           </Route>
         </Routes>

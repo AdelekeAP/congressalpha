@@ -63,6 +63,14 @@ const Layout = () => {
                   Trade Feed
                 </Link>
                 <Link
+                  to="/strategy-simulation"
+                  onClick={() => setOpen(false)}
+                  className="hover:text-brand-400"
+                >
+                  Strategy Simulation
+                </Link>
+
+                <Link
                   to="/settings"
                   onClick={() => setOpen(false)}
                   className="hover:text-brand-400"

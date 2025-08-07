@@ -1,5 +1,5 @@
 from pydantic import BaseModel, EmailStr
-from typing import Optional, List
+from typing import Optional, List, Any, Dict
 from datetime import date
 
 class TradeBase(BaseModel):
@@ -43,7 +43,8 @@ class PoliticianCreate(PoliticianBase):
 
 class PoliticianOut(PoliticianBase):
     id: int
-
+    trades: Optional[int] = 0
+    total_return: Optional[str] = None
     class Config:
         from_attributes = True
 
@@ -68,12 +69,9 @@ class UserOut(BaseModel):
     email: EmailStr
     avatar: Optional[str] = None
     bio: Optional[str] = None
-    # Do NOT include hashed_password!
 
     class Config:
         from_attributes = True  # for pydantic v2+
-
-
 
 class AlertSettingBase(BaseModel):
     user_id: int
@@ -105,6 +103,15 @@ class FollowingOut(FollowingBase):
 
     class Config:
         from_attributes = True
+
+# ------------------------------
+# NEW: For Simulation Response
+# ------------------------------
+
+class PortfolioPoint(BaseModel):
+    date: date
+    balance: float
+
 class SimulationRequest(BaseModel):
     politician_ids: List[int]
     start_date: date
@@ -115,11 +122,11 @@ class SimulationRequest(BaseModel):
 class TradeSimulationResult(BaseModel):
     trade_id: int
     ticker: str
-    buy_date: date
-    buy_price: float
-    sell_date: date
-    sell_price: float
-    return_: float
+    buy_date: Optional[date] = None
+    buy_price: Optional[float] = None
+    sell_date: Optional[date] = None
+    sell_price: Optional[float] = None
+    return_: Optional[float] = None
     politician_id: int
 
 class PoliticianSummary(BaseModel):
@@ -131,3 +138,6 @@ class SimulationResponse(BaseModel):
     final_balance: float
     trade_results: List[TradeSimulationResult]
     summary_by_politician: List[PoliticianSummary]
+    portfolio_history: List[PortfolioPoint]
+    sp500_history: List[Dict[str, Any]]
+    trade_analysis: Dict[str, Any]

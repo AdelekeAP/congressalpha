@@ -106,6 +106,7 @@ export default function Dashboard() {
       {/* Lower Section: Charts & Settings */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div className="lg:col-span-2 space-y-8">
+        <StrategySimulation />
           <PerformanceChart
             politicianName="All Politicians"
             data={aggregatePerformance.map(item => ({
@@ -114,7 +115,7 @@ export default function Dashboard() {
               market: item.market,
             }))}
           />
-          <StrategySimulation />
+         
         </div>
         <div className="space-y-8">
           <TopPerformers />
